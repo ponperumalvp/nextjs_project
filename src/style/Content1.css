@@ -5,6 +5,8 @@
   display: flex;
   justify-content: space-around;
   background-color: #ffffff;
+  position: relative;
+  margin-top: 10px;
 }
 .item1 {
   display: flex;
@@ -97,6 +99,17 @@
   margin-bottom: 10px;
   border-radius: 12px;
   color: white;
+}
+.special {
+  position: absolute;
+  width: 136px;
+  height: 34px;
+  background-color: #ff7724;
+  color: white;
+  z-index: 10;
+  text-align: center;
+  border-radius: 12px;
+  padding: 2px;
 }
 
 @media screen and (max-width: 768px) {

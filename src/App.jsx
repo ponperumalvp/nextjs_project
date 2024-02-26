@@ -7,6 +7,7 @@ import * as Ti from "react-icons/ti";
 import * as Hi from "react-icons/hi";
 import * as Md from "react-icons/md";
 import Footer from "./components/footer/Footer";
+import Button from "./components/button/Button";
 
 function App() {
   return (
@@ -59,14 +60,16 @@ function App() {
           </ul>
         </div>
       </div>
-      {content.map((item, idx) => {
-        return (
-          <div key={idx} className="content">
-            <div></div>
-            <Content1 item={item} />
-          </div>
-        );
-      })}
+      <div className="content">
+        {content.map((item, idx) => {
+          return (
+            <div key={idx}>
+              {item.special ? <div className="special">{item.value}</div> : ""}
+              <Content1 item={item} />
+            </div>
+          );
+        })}
+      </div>
       <h2 className="top">Related deals you might like for</h2>
       <div className="ContentAlign">
         {content2.map((item, idx) => {
@@ -77,6 +80,19 @@ function App() {
             </div>
           );
         })}
+      </div>
+      <div className="last">
+        <div>
+          <h2>Sign up and get exclusive special deals</h2>
+        </div>
+        <div last2>
+          <div>
+            <input type="text" />
+          </div>
+          <div className="lastbtn">
+            <Button children="Sing Up" />
+          </div>
+        </div>
       </div>
       <Footer />
     </main>

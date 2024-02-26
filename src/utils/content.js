@@ -9,6 +9,8 @@ export const content = [
       "[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides.",
     rating: "9.8",
     review: "Exceptional",
+    special: true,
+    value: "Best Choice",
   },
   {
     id: 2,
@@ -20,6 +22,8 @@ export const content = [
       "[What You Get]: Gain access to the SiteCraft design studio, featuring a robust selection of design elements, SEO optimization tools, and e-commerce integrations.",
     rating: "9.5",
     review: "Excellent",
+    special: true,
+    value: "Best value",
   },
   {
     id: 3,
